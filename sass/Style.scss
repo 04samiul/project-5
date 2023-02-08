@@ -1,0 +1,303 @@
+/* Reset CSS  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Syne', sans-serif;
+    /* font-size: ; */
+
+}
+
+html {
+    scroll-behavior: smooth;
+    // overflow-x: hidden;
+}
+
+/* Variables  */
+$fullBg: #434242;
+$bg: #6D9886;
+
+// Common CSS 
+.yourImg {
+    position: absolute;
+    bottom: 0;
+    // left: 50%;
+    // transform: translateX(-50%);
+    // background: #000;
+    width: 100%;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h3 {
+        font-weight: normal;
+        color: #fff;
+        text-align: center;
+        z-index: 1;
+        font-size: 17px;
+        letter-spacing: 3px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            opacity: 0.5;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            z-index: -1;
+        }
+
+    }
+
+}
+
+#body {
+    background: $fullBg;
+    width: 100vw;
+    height: 100vh;
+
+    #editorBg {
+        width: 1200px;
+        height: 800px;
+        background: $bg;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 5px;
+        box-shadow: 0 4px 13px rgba($color: $bg, $alpha: 0.5);
+
+        .preview_btns {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 96%;
+            height: 48%;
+
+            .left {
+                height: 100%;
+                width: 49.5%;
+                background: $fullBg;
+                border-radius: 5px;
+                position: relative;
+
+                img {
+                    max-width:570px;
+                    max-height: 384px;
+                    margin: auto;
+                    display: block;
+
+
+                }
+
+
+
+            }
+
+            .right {
+                height: 100%;
+                width: 49.5%;
+                background: $fullBg;
+                float: right;
+                border-radius: 5px;
+                position: relative;
+                img {
+                    max-width: 570px;
+                    max-height: 384px;
+                    margin: auto;
+                    display: block;
+
+
+                }
+            }
+
+
+        }
+    }
+
+    .controls {
+        width: 90%;
+        // background: #000;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+
+        button {
+            color: #fff;
+            // background: $fullBg;
+            background: #2B3A55;
+            border: none;
+            width: 100px;
+            height: 30px;
+            margin: 0px 8px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba($color: #fff, $alpha: 0.5);
+
+            &:hover {
+                color: #000;
+                border: 1px solid #000;
+                background: rgba($color: $bg, $alpha: 0.1);
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .actions {
+        width: 96%;
+        height: 40%;
+        background: $fullBg;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .left {
+            width: 50%;
+            height: 100%;
+            position: relative;
+
+
+            .buttons {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: center;
+
+                .btn {
+                    width: 125px;
+                    height: 40px;
+                    font-weight: bold;
+                    color: #000;
+                    background: $bg;
+                    margin: 8px;
+                    border: none;
+                    border-radius: 5px;
+                    transition: all 0.3s ease-in-out;
+
+                    &:hover {
+                        color: #fff;
+                        background: rgba($color: $bg, $alpha: 0.1);
+                        transform: scale(1.1);
+                    }
+                }
+                .sBtnDiv{
+                    width: 125px;
+                    height: 40px;
+                    display: flex;
+                    justify-content: space-evenly;
+                    background: transparent;
+                    &:hover {
+                        color: #fff;
+                        background:none;
+                        transform: scale(1.1);
+                    }
+                    .sBtn{
+                        width: 40px;
+                        height: 40px;
+                        font-weight: bold;
+                        color: #000;
+                        background: $bg;
+                        margin: 8px;
+                        border: none;
+                        transition: all 0.3s ease-in-out;
+                        &:hover {
+                            color: #fff;
+                            background:none;
+                            transform: scale(1.1);
+                        }
+
+                    }
+                }
+
+                .activeBtn {
+                    color: #fff;
+                    background: transparent;
+                    border: $bg 1px solid;
+                    border-right: 1px solid transparent;
+                    border-top-right-radius: 0px;
+                    border-bottom-right-radius: 0px;
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        .right {
+            // position: absolute;
+            width: 50%;
+            height: 100%;
+
+            .value {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                width: 100%;
+
+                .text {
+                    width: 35%;
+                    display: flex;
+                    justify-content: space-between;
+
+                    p {
+                        color: #fff;
+                    }
+                }
+
+                input {
+                    width: 45%;
+                }
+
+                .buttons {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 35%;
+
+                    button {
+                        width: 50px;
+                        height: 40px;
+                        font-weight: bold;
+                        color: #000;
+                        background: $bg;
+                        margin-top: 30px;
+                        border: none;
+                        border-radius: 5px;
+                        transition: all 0.3s ease-in-out;
+
+                        &:hover {
+                            color: #fff;
+                            background: rgba($color: $bg, $alpha: 0.1);
+                            transform: scale(1.1);
+                        }
+
+                        i {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+}
+.disable :where( h3, .btn, #reset, #save, .value){
+    opacity: 0.4;
+    pointer-events: none;
+}

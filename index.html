@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Authorities Information -->
+    <meta name="author" content="Md. Samiul Alam">
+    <meta name="description" content="Practice Project">
+
+    <!-- Metas -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title & Favicon -->
+    <title>Photo Editor</title>
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/res.min.css">
+    <link rel="stylesheet" href="assets/icons/css/all.min.css">
+    <link rel="stylesheet" href="assets/icons/css/fontawesome.min.css">
+
+</head>
+
+<body>
+    <section id="body" class=" disable">
+        <main id="editorBg">
+            <div class="preview_btns" >
+                <div class="left" id="preview">
+                    <img src="" alt="" id="beforePreview">
+                    <div class="yourImg" >
+                        <h3>Before</h3>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="preview" id="preview">
+                        <img src="" alt="" id="afterPreviewImg">
+                        <div class="yourImg">
+                            <h3>After</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="controls">
+                <input type="file" id="fileInput" accept="image/*" hidden>
+                <button id="reset">Reset All</button>
+                <button id="choose" >Choose Image</button>
+                <button id="save" >Save Image</button>
+            </div>
+            <div class="actions">
+                <div class="left">
+                    <div class="buttons">
+                        <button id="brightness" class="btn  activeBtn" type="button">Brightness</button>
+                        <button id="saturation" class="btn" type="button">Saturation</button>
+                        <button id="contrast" class="btn" type="button">Contrast</button>
+                        <button id="sepia" class="btn" type="button">Sepia</button>
+                        <button id="grayscale" class="btn" type="button">Grayscale</button>
+                        <!-- <div class="sBtnDiv btn"> <button class="sBtn" id="left"><i class="fa-solid fa-rotate-left"></i></button>
+                            <button class="sBtn" id="right"><i class="fa-solid fa-rotate-right"></i></button></div> -->
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="value">
+                        <div class="text">
+                            <p class="name">Brightness</p>
+                            <p class="amount">100%</p>
+                        </div>
+                        <input type="range" value="100" min="0" max="200">
+                        <div class="buttons">
+                           
+                        </div>
+                        
+                        
+                    </div>
+                    
+                  
+                </div>
+            </div>
+        </main>
+    </section>
+
+
+
+    <!-- JavaScript Links -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

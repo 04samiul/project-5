@@ -1,0 +1,359 @@
+@media only screen and (max-width: 1280px) {
+
+
+    #body {
+        #editorBg {
+            width: 90vw;
+            height: 90vh;
+
+            .preview_btns {
+
+                .left {
+
+                    img {
+                        max-width: 279px;
+                        max-height: 335px;
+
+
+                    }
+
+
+
+                }
+
+                .right {
+
+                    img {
+                        max-width: 279px;
+                        max-height: 335px;
+
+
+                    }
+                }
+            }
+
+            .actions {
+                width: 96%;
+                height: 40%;
+
+                .left {
+                    width: 50%;
+                    height: 100%;
+
+
+                    .btn {
+                        width: 100px;
+                        height: 30px;
+                        margin: 6px;
+
+
+
+                    }
+
+
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1044px) {
+    #body {
+        #editorBg {
+
+            .left {
+                img {
+                    max-height: 259px;
+                }
+
+            }
+
+            .right {
+
+                img {
+                    max-height: 259px;
+                }
+            }
+
+            .actions {
+                width: 96%;
+                height: 40%;
+                display: flex;
+
+                .left {
+                    width: 50%;
+                    height: 50%;
+
+                    .buttons {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        width: 100%;
+                        height: 80%;
+                        display: flex;
+                        flex-direction: column;
+                        flex-wrap: wrap;
+                        align-items: center;
+
+                        .btn {
+                            width: 90px;
+                            height: 25px;
+                            margin: 6px;
+
+
+                        }
+                    }
+
+
+                }
+
+                .right {
+                    // position: absolute;
+                    width: 50%;
+                    height: 100%;
+
+                    .value {
+                        height: 100%;
+                        width: 100%;
+
+                        .text {
+                            width: 35%;
+                            font-size: 15px;
+                        }
+
+                        input {
+                            width: 35%;
+                        }
+
+                        .buttons {
+                            width: 35%;
+
+                            button {
+                                width: 35px;
+                                height: 35px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 712px) {
+    html{
+        overflow-y: scroll;
+    }
+    #body {
+        #editorBg {
+            overflow: visible;
+            height: 800px;
+            .preview_btns {
+                display: flex;
+                flex-direction: column;
+                // justify-content: space-between;
+                // align-items: center;
+                width: 100%;
+                height: 48%;
+
+                .left {
+                    width: 90%;
+                    margin-bottom: 5px;
+
+                    img {
+                        max-height: 188px;
+                    }
+
+                }
+
+                .right {
+                    width: 90%;
+
+                    img {
+                        max-height: 188px;
+                    }
+                }
+
+
+            }
+
+            .actions {
+
+                width: 90%;
+                height: 40%;
+                display: flex;
+
+                .left {
+                    width: 50%;
+                    height: 50%;
+
+                    .buttons {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        width: 100%;
+                        height: 80%;
+                        display: flex;
+                        flex-direction: column;
+                        flex-wrap: wrap;
+                        align-items: center;
+
+                        .btn {
+                            width: 90px;
+                            height: 25px;
+                            margin: 6px;
+
+
+                        }
+                    }
+
+
+                }
+
+                .right {
+                    // position: absolute;
+                    width: 50%;
+                    height: 100%;
+
+                    .value {
+                        height: 100%;
+                        width: 100%;
+                        position: relative;
+
+                        .text {
+                            width: 35%;
+                            height: 250px;
+                            font-size: 15px;
+                            flex-direction: column-reverse;
+                            align-items: center;
+                            justify-content: space-between;
+                            position: absolute;
+
+                        }
+
+                        input {
+                            width: 191px;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%) rotate(-90deg);
+                            transform-origin: center;
+
+                        }
+
+                        .buttons {
+                            position: absolute;
+                            top: 70%;
+                            width: 25%;
+
+                            button {
+                                width: 20px;
+                                height: 20px;
+
+                                i {
+                                    font-size: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media only screen and (max-width: 380px) {
+
+    #body {
+        #editorBg {
+            .preview_btns{
+                .yourImg {
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    height: 15px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                
+                    h3 {
+                        font-weight: normal;
+                        color: #fff;
+                        text-align: center;
+                        z-index: 1;
+                        font-size: 13px;
+                        letter-spacing: 1px;
+                
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            background: #000;
+                            opacity: 0.5;
+                            border-bottom-left-radius: 5px;
+                            border-bottom-right-radius: 5px;
+                            z-index: -1;
+                        }
+                
+                    }
+                
+                }
+            }
+            .controls {
+                width: 90%;
+                height: 25px;
+                display: flex;
+                justify-content: center;
+        
+                button {
+                    color: #fff;
+                    font-size: 10px;
+                    width: 100px;
+                    height: 30px;
+                    margin: 0px 5px;
+                    border-radius: 5px;
+                }
+            }
+            .actions {
+
+                .left {
+                    input {
+                        width: 175px;
+
+                    }
+                    .text {
+                        width: 35%;
+                        height: 290px;
+                        
+                    }
+                    .buttons {
+                        flex-wrap: nowrap;
+                        width: 100%;
+                        height: 100%;
+
+                        .btn {
+                            width: 75px;
+                            height: 18px;
+                            margin: 5px;
+                            border-radius: 3px;
+
+
+                        }
+                    }
+
+
+                }
+
+
+            }
+        }
+    }
+}
